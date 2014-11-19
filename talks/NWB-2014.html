@@ -43,8 +43,8 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Nothing in <em>Neurodata</em> makes sense</h1>
-					<h3>except in light of behavioral annotations</h3>
+					<h1>Nothing in {Neurodata} makes sense</h1>
+					<h3>except in light of {behavioral annotations}</h3>
 					<p>
 						<small><a href="http://justinkiggins.com">Justin Kiggins</a> / UC San Diego</small>
 					</p>
@@ -52,30 +52,30 @@
 
 				<section>
 					<h2>Experimental Events</h2>
-					<blockquote>The Experimental Events data type consists of times of events, along with values that correspond to the times. This data type can be used to describe: stimuli, trials or sweeps, time intervals, behaviors, and other events or conditions that occur during the experiment.</blockquote>>
-					<p>source: <a href="https://crcns.org/files/data/nwb/ephys_requirements_v0_72.pdf">INCF requirements for storing electrophysiology data</a> (PDF, 2014-11-03)</p>
+					<blockquote>The Experimental Events data type consists of times of events, along with values that correspond to the times. This data type can be used to describe: stimuli, trials or sweeps, time intervals, behaviors, and other events or conditions that occur during the experiment.</blockquote>
+					<p><a href="https://crcns.org/files/data/nwb/ephys_requirements_v0_72.pdf">INCF requirements for storing electrophysiology data</a> (PDF, 2014-11-03)</p>
 
 				</section>
 
 				<section>
 					<h2>Event Requirements</h2>
 					<ul>
-						<li>Starting time of event monitoring (earliest time an event could be detected)</li>
-						<li>Ending time of event monitoring (latest time that an event could be detected)</li>
-						<li>Description of the events</li>
-						<li>Sequence of event times</li>
-						<li>Property values needed to describe each event. These could be a string or numeric value, a list of values together with metadata required for interpreting the property values. For example, if the event were the start of presentation of a sound of fixed frequency, the metadata would specify that the numeric values indicate the frequency in Hz.</li>
+						<li><strong>Starting time</strong> of event monitoring (earliest time an event could be detected)</li>
+						<li><strong>Ending time</strong> of event monitoring (latest time that an event could be detected)</li>
+						<li><strong>Description</strong> of the events</li>
+						<li>Sequence of <strong>event times</strong></li>
+						<li><strong>Property values</strong> needed to describe each event.</li>
 					</ul>
-					<p>source: <a href="https://crcns.org/files/data/nwb/ephys_requirements_v0_72.pdf">INCF requirements for storing electrophysiology data</a> (PDF, 2014-11-03)</p>
+					<p><a href="https://crcns.org/files/data/nwb/ephys_requirements_v0_72.pdf">INCF requirements for storing electrophysiology data</a> (PDF, 2014-11-03)</p>
 
 				</section>				
 
 				<section>
-					<h2>behavior is not flat</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
+					<h2>behavior is not flat. for example...</h2>
+					<ul>
+						<li>Stimuli may have relationships that subjects must respond to (e.g. Delayed Match to Sample task)</li>
+						<li>Behavior have hierarchical structure</li>
+					</ul>
 
 				</section>
 
