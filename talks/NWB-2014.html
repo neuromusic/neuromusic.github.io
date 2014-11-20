@@ -56,7 +56,7 @@
 				</section>
 
 				<section>
-					<h2>Behavior is complex and complicated.</h2>
+					<h2>Behavior is complex and complicated</h2>
 					<ul>
 						<li>Stimulus events often have relationships which behavior &amp; neural activity depend on (e.g. Match to Sample tasks)</li>
 						<li>Behavioral events may be inter-related through hierarchical structures (e.g. birdsong)</li>
@@ -76,8 +76,7 @@
 				<section>
 					<h2>Basic Operant Conditioning</h2>
 					<pre>
-						<code style="font-size: 14px; margin-top: 20px;">
-Time         | ID | Stimulus | Response | r_Time | Error
+						<code style="font-size: 16px;">Time         | ID | Stimulus | Response | r_Time | Error
 -------------|----|----------|----------|--------|------
 12:13:05.265 | 1  | puppy    | Right    | 2.115  | False
 12:13:14.655 | 2  | kitty    | Right    | 2.004  | True
@@ -91,29 +90,27 @@ Time         | ID | Stimulus | Response | r_Time | Error
 				<section>
 					<h2>Match to Sample</h2>
 					<pre>
-						<code style="font-size: 14px; margin-top: 20px;">
-Time         | ID | Sample | Target | Response | r_Time | Error
+						<code style="font-size: 16px;">Time         | ID | Sample | Target | Response | r_Time | Error
 -------------|----|------- |--------|----------|--------|------
 12:13:05.265 | 1  | puppy  | puppy  | Right    | 2.115  | False
 12:13:14.655 | 2  | kitty  | puppy  | Right    | 2.004  | True
 12:13:87.098 | 3  | puppy  | kitty  | Left     | 2.298  | False
 						</code>
 					</pre>
-					<p>However, if we are doing neurophysiology, we need to know timing information.</p> 
+					<p>However, if we are doing neurophysiology, we need to know timing information</p> 
 				</section>
 
 				<section>
 					<h2>Need timing of Sample &amp; Target</h2>
 					<pre>
-						<code style="font-size: 14px; margin-top: 20px;">
-Time         | ID | Sample | s_Time | s_Dur | Target | t_Time | t_Dur | Response | r_Time | Error
+						<code style="font-size: 16px;">Time         | ID | Sample | s_Time | s_Dur | Target | t_Time | t_Dur | Response | r_Time | Error
 -------------|----|------- |--------|-------|--------|--------|-------|----------|--------|------
 12:13:05.265 | 1  | puppy  | 0.0    | 0.5   | puppy  | 1.5    | 0.5   | Right    | 2.115  | False
 12:13:14.655 | 2  | kitty  | 0.0    | 0.5   | puppy  | 1.0    | 0.5   | Right    | 2.004  | True
 12:13:87.098 | 3  | puppy  | 0.0    | 0.5   | kitty  | 1.2    | 0.5   | Left     | 2.298  | False
 						</code>
 					</pre>
-					<p>However...</p> 
+					<p>However..</p> 
 					<ul>
 						<li>Sample, Target &amp; Response are each unique Events</li>
 						<li>The Class of a trial is determined by the Sample/Target relationship</li>
@@ -122,8 +119,7 @@ Time         | ID | Sample | s_Time | s_Dur | Target | t_Time | t_Dur | Response
 				<section>
 					<h2>Solution: Grouping stimulus, response, and consequence events into Trials</h2>
 					<pre>
-						<code style="font-size: 14px; margin-top: 20px;">
-Events
+						<code style="font-size: 16px;">Events
 ======
 Time         | ID | Class  | Value  | Duration
 -------------|----|--------|--------|---------
@@ -147,14 +143,13 @@ ID | Sample_id | Target_id | Resp_id | Conseq_id | Task
 				</section>
 
 				<section>
-					<h2>...or...</h2>
+					<h2>...or..</h2>
 				</section>
 
 				<section>
 					<h2>Defining Target-Sample relationship with references between events</h2>
 					<pre>
-						<code style="font-size: 18px; margin-top: 20px;">
-Time         | ID | Class  | Value  | Duration | Sample_id
+						<code style="font-size: 18px;">Time         | ID | Class  | Value  | Duration | Sample_id
 -------------|----|--------|--------|----------|----------
 12:13:05.265 | 1  | sample | puppy  | 0.5      | --
 12:13:06.765 | 2  | target | puppy  | 0.5      | 1
@@ -170,8 +165,8 @@ Time         | ID | Class  | Value  | Duration | Sample_id
 				</section>
 
 				<section>
-					<p>My point here is not to argue for a standard for representing behavior data.</p> 
-					<p>Rather, that for even a relatively simple &amp; common behavioral design, relationships between events are important.</p>
+					<p>My point here is not to argue for a standard for representing behavior data</p> 
+					<p>Rather, that for even a relatively simple &amp; common behavioral design, relationships between events are important</p>
 				</section>
 
 				<section>
@@ -188,17 +183,17 @@ Time         | ID | Class  | Value  | Duration | Sample_id
 				</section>
 
 				<section>
-					<h2>Minimally, Allow for Normalization of Events</h2>
+					<h2>Allow for Normalization of Behavioral Events</h2>
 					<ul>
 						<li>SQL &mdash; Foreign keys</li>
-						<li>NoSQL &mdash; References or links</li>
 						<li>HDF5 &mdash; <code>reference</code> datatype</li>
+						<li>NoSQL &mdash; References or links</li>
 					</ul>
 				</section>
 
 				<section>
 					<h2>This opens up behavioral representations to be a rich as the behaviors themselves</h2>
-					<h3>and lets the lines between behavior and neurophysiology be drawn as the researcher sees fit.</h3>
+					<h3>and lets the lines between behavior and neurophysiology be drawn as the researcher sees fit</h3>
 				</section>
 
 				<section>
