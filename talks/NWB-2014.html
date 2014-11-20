@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Nothing in {neuro data} makes sense except in light of {behavioral annotations}</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="author" content="Justin T Kiggins">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -43,7 +43,7 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Nothing in {Neurodata} makes sense</h1>
+					<h1>Nothing in {neuro data} makes sense</h1>
 					<h3>except in light of {behavioral annotations}</h3>
 					<p>
 						<small><a href="http://justinkiggins.com">Justin Kiggins</a> / UC San Diego</small>
@@ -51,32 +51,117 @@
 				</section>
 
 				<section>
-					<h2>Experimental Events</h2>
-					<blockquote>The Experimental Events data type consists of times of events, along with values that correspond to the times. This data type can be used to describe: stimuli, trials or sweeps, time intervals, behaviors, and other events or conditions that occur during the experiment.</blockquote>
-					<p><a href="https://crcns.org/files/data/nwb/ephys_requirements_v0_72.pdf">INCF requirements for storing electrophysiology data</a> (PDF, 2014-11-03)</p>
+					<h2><em>Experimental Events</em> data type</h2>
+					<blockquote cite="https://crcns.org/files/data/nwb/ephys_requirements_v0_72.pdf">&ldquo;...consists of times of events, along with values that correspond to the times. This data type can be used to describe: stimuli, trials or sweeps, time intervals, behaviors, and other events or conditions that occur during the experiment.&rdquo;</blockquote>
+					<p><a href="https://crcns.org/files/data/nwb/ephys_requirements_v0_72.pdf">INCF requirements for storing electrophysiology data</a><br /> (PDF, 2014-11-03)</p>
 
 				</section>
 
 				<section>
 					<h2>Event Requirements</h2>
 					<ul>
-						<li><strong>Starting time</strong> of event monitoring (earliest time an event could be detected)</li>
-						<li><strong>Ending time</strong> of event monitoring (latest time that an event could be detected)</li>
+						<li><strong>Starting time</strong> of event monitoring</li>
+						<li><strong>Ending time</strong> of event monitoring</li>
 						<li><strong>Description</strong> of the events</li>
 						<li>Sequence of <strong>event times</strong></li>
 						<li><strong>Property values</strong> needed to describe each event.</li>
 					</ul>
-					<p><a href="https://crcns.org/files/data/nwb/ephys_requirements_v0_72.pdf">INCF requirements for storing electrophysiology data</a> (PDF, 2014-11-03)</p>
+					<p><a href="https://crcns.org/files/data/nwb/ephys_requirements_v0_72.pdf">INCF requirements for storing electrophysiology data</a><br /> (PDF, 2014-11-03)</p>
 
-				</section>				
+				</section>
 
 				<section>
-					<h2>behavior is not flat. for example...</h2>
+					<h2>However, behavior is not flat.</h2>
 					<ul>
-						<li>Stimuli may have relationships that subjects must respond to (e.g. Delayed Match to Sample task)</li>
-						<li>Behavior have hierarchical structure</li>
+						<li>Stimulus events often have relationships behavior &amp; neural activity depend on (e.g. Match to Sample tasks)</li>
+						<li>Behavioral events may be related through hierarchical structures (e.g. birdsong)</li>
 					</ul>
 
+				</section>
+
+				<section>
+					<h2>Example: Operant conditioning</h2>
+					<h3>Stimulus -> Response -> Consequence</h3>
+					<ul>
+						<li>When did each Stimulus, Response, and Consequence event happen?</li>
+						<li>Which behavioral event was <em>the</em> Response? Stimulus? Consequence?</li>
+						<li>Was the trial correct?</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Delayed Match to Sample</h2>
+					<code data-trim contenteditable>
+Time          ID  Sample s_Time  s_Dur   Target  t_Time t_Dur Response r_Time Error
+12:13:05.265  1   puppy  0.0     0.5     puppy   1.5    0.5   Right    2.1157 False
+12:13:14.655  2   kitty  0.0     0.5     puppy   1.0    0.5   Right    2.004  True
+12:13:87.098  3   puppy  0.0     0.5     kitty   1.2    0.5   Left     2.298  False
+					</code>
+					<p>However: Sample, Target &amp; Response are each their own Events</p>
+				</section>
+				<section>
+					<h2>Defining trials by "grouping" stimulus, response, and consequence events</h2>
+					<code data-trim contenteditable>
+Events
+======
+Time         | ID | Class  | Value  | Duration
+-------------|----|--------|--------|---------
+12:13:05.265 | 1  | sample | puppy  | 0.5
+12:13:06.765 | 2  | target | puppy  | 0.5
+12:13:07.380 | 3  | resp   | left   | --
+12:13:07.387 | 4  | conseq | reward | 1.0       
+12:13:14.655 | 5  | sample | kitty  | 0.5
+12:13:15.655 | 6  | target | puppy  | 0.5
+12:13:16.659 | 7  | resp   | left   | --
+12:13:16.668 | 8  | conseq | punish | 5.0    
+...
+
+Trials
+======
+ID | Sample_id | Target_id | Resp_id | Conseq_id | Task 
+---|-----------|-----------|---------|-----------|------
+1  | 1         | 2         | 3       | 4         | match
+2  | 5         | 6         | 7       | 8         | match
+...
+					</code>
+				</section>
+
+				<section>
+					<h2>Defining Target-Sample relationship with references between events</h2>
+					<code data-trim contenteditable>
+Events
+======
+Time         | ID | Class  | Value  | Duration | Sample_id
+-------------|----|--------|--------|----------|----------
+12:13:05.265 | 1  | sample | puppy  | 0.5      | --
+12:13:06.765 | 2  | target | puppy  | 0.5      | 1
+12:13:07.380 | 3  | resp   | left   | --       | --
+12:13:07.387 | 4  | conseq | reward | 1.0      | --
+12:13:14.655 | 5  | sample | kitty  | 0.5      | --
+12:13:15.655 | 6  | target | puppy  | 0.5      | 5
+12:13:16.659 | 7  | resp   | left   | --       | --
+12:13:16.668 | 8  | conseq | punish | 5.0      | --
+...
+					</code>
+				</section>
+
+				<section>
+					<p>My point here is not to argue for a standard for representing behavior data, only that for even a relatively simple behavioral design, one needs to keep track of the relationships between events.</p>
+				</section>
+
+				<section>
+					<h2>Hierarchies of events</h2>
+					<h3>Birdsong</h3>
+					<p>Acoustic features comprise Notes, which comprise Motifs, which comprise Bouts</p>
+				</section>
+
+				<section>
+					<h2>Allow for Normalization of Events</h2>
+					<ul>
+						<li>SQL &em; Foreign keys</li>
+						<li>NoSQL &em; References or links</li>
+						<li>HDF5 &em; hard &amp; soft links, <code>reference</code> datatype</li>
+					</ul>
 				</section>
 
 			</div>
