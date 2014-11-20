@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Nothing in {neuro data} makes sense except in light of {behavioral annotations}</title>
+		<title>Nothing in neurodata makes sense except in light of behavioral annotations</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Justin T Kiggins">
@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -43,10 +43,13 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Nothing in {neuro data} makes sense</h1>
-					<h3>except in light of {behavioral annotations}</h3>
+					<h3>Nothing in neurodata makes sense</h1>
+					<h1>except in light of behavioral annotations</h3>
 					<p>
 						<small><a href="http://justinkiggins.com">Justin Kiggins</a> / UC San Diego</small>
+					</p>
+					<p>
+						<small>Neurodata Without Borders Hackathon / Nov 2014</small>
 					</p>
 				</section>
 
@@ -73,35 +76,37 @@
 				<section>
 					<h2>However, behavior is not flat.</h2>
 					<ul>
-						<li>Stimulus events often have relationships behavior &amp; neural activity depend on (e.g. Match to Sample tasks)</li>
-						<li>Behavioral events may be related through hierarchical structures (e.g. birdsong)</li>
+						<li>Stimulus events often have relationships which behavior &amp; neural activity depend on (e.g. Match to Sample tasks)</li>
+						<li>Behavioral events may be inter-related through hierarchical structures (e.g. birdsong)</li>
 					</ul>
 
 				</section>
 
 				<section>
 					<h2>Example: Operant conditioning</h2>
-					<h3>Stimulus -> Response -> Consequence</h3>
+					<h3>Stimulus &#10097; Response &#10097; Consequence</h3>
 					<ul>
-						<li>When did each Stimulus, Response, and Consequence event happen?</li>
-						<li>Which behavioral event was <em>the</em> Response? Stimulus? Consequence?</li>
+						<li>Which event was the Response? Stimulus? Consequence?</li>
 						<li>Was the trial correct?</li>
 					</ul>
 				</section>
 
 				<section>
 					<h2>Delayed Match to Sample</h2>
-					<code data-trim contenteditable>
+					<pre>
+						<code data-trim contenteditable>
 Time          ID  Sample s_Time  s_Dur   Target  t_Time t_Dur Response r_Time Error
 12:13:05.265  1   puppy  0.0     0.5     puppy   1.5    0.5   Right    2.1157 False
 12:13:14.655  2   kitty  0.0     0.5     puppy   1.0    0.5   Right    2.004  True
 12:13:87.098  3   puppy  0.0     0.5     kitty   1.2    0.5   Left     2.298  False
-					</code>
+						</code>
+					</pre>
 					<p>However: Sample, Target &amp; Response are each their own Events</p>
 				</section>
 				<section>
 					<h2>Defining trials by "grouping" stimulus, response, and consequence events</h2>
-					<code data-trim contenteditable>
+					<pre>
+						<code data-trim contenteditable>
 Events
 ======
 Time         | ID | Class  | Value  | Duration
@@ -123,12 +128,14 @@ ID | Sample_id | Target_id | Resp_id | Conseq_id | Task
 1  | 1         | 2         | 3       | 4         | match
 2  | 5         | 6         | 7       | 8         | match
 ...
-					</code>
+						</code>
+					</pre>
 				</section>
 
 				<section>
 					<h2>Defining Target-Sample relationship with references between events</h2>
-					<code data-trim contenteditable>
+					<pre>
+						<code data-trim contenteditable>
 Events
 ======
 Time         | ID | Class  | Value  | Duration | Sample_id
@@ -142,16 +149,22 @@ Time         | ID | Class  | Value  | Duration | Sample_id
 12:13:16.659 | 7  | resp   | left   | --       | --
 12:13:16.668 | 8  | conseq | punish | 5.0      | --
 ...
-					</code>
+						</code>
+					</pre>
 				</section>
 
 				<section>
-					<p>My point here is not to argue for a standard for representing behavior data, only that for even a relatively simple behavioral design, one needs to keep track of the relationships between events.</p>
+					<p>My point here is not to argue for a standard for representing behavior data.</p> 
+					<p>Rather, that for even a relatively simple &amp; common behavioral design, relationships between events are important.</p>
 				</section>
 
 				<section>
-					<h2>Hierarchies of events</h2>
-					<h3>Birdsong</h3>
+					<h2>More complex relationships underly more complex tasks</h2>
+					<ul>
+						<li>Task switching on cue</li>
+						<li>Task switching on cue</li>
+						<li>Task switching on cue</li>
+					</ul>
 					<p>Acoustic features comprise Notes, which comprise Motifs, which comprise Bouts</p>
 				</section>
 
