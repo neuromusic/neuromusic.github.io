@@ -96,7 +96,7 @@
 				<section>
 					<h2>Delayed Match to Sample</h2>
 					<pre>
-						<code>
+						<code style="font-size: 18px; margin-top: 20px;">
 Time         | ID | Sample | s_Time | s_Dur | Target | t_Time | t_Dur | Response | r_Time | Error
 -------------|----|------- |--------|-------|--------|--------|-------|----------|--------|------
 12:13:05.265 | 1  | puppy  | 0.0    | 0.5   | puppy  | 1.5    | 0.5   | Right    | 2.115  | False
@@ -104,12 +104,16 @@ Time         | ID | Sample | s_Time | s_Dur | Target | t_Time | t_Dur | Response
 12:13:87.098 | 3  | puppy  | 0.0    | 0.5   | kitty  | 1.2    | 0.5   | Left     | 2.298  | False
 						</code>
 					</pre>
-					<p>However: Sample, Target &amp; Response are each their own Events</p>
+					<p>However...</p> 
+					<ul>
+						<li>Sample, Target &amp; Response are each unique Events</li>
+						<li>The Class of a trial is determined by the Sample/Target relationship</li>
+					</ul>
 				</section>
 				<section>
-					<h2>Defining trials by "grouping" stimulus, response, and consequence events</h2>
+					<h2>Solution: Grouping stimulus, response, and consequence events into Trials</h2>
 					<pre>
-						<code>
+						<code style="font-size: 18px; margin-top: 20px;">
 Events
 ======
 Time         | ID | Class  | Value  | Duration
@@ -134,13 +138,13 @@ ID | Sample_id | Target_id | Resp_id | Conseq_id | Task
 				</section>
 
 				<section>
-					<p>...or...</p>
+					<h2>...or...</h2>
 				</section>
 
 				<section>
 					<h2>Defining Target-Sample relationship with references between events</h2>
 					<pre>
-						<code>
+						<code style="font-size: 18px; margin-top: 20px;">
 Time         | ID | Class  | Value  | Duration | Sample_id
 -------------|----|--------|--------|----------|----------
 12:13:05.265 | 1  | sample | puppy  | 0.5      | --
@@ -165,9 +169,8 @@ Time         | ID | Class  | Value  | Duration | Sample_id
 					<h2>More complex relationships underly more complex behaviors</h2>
 					<ul>
 						<li>Task switching on cue</li>
-						<li>Task switching on cue</li>
-						<li>Chunking in motor control</li>
-						<li>Hierarchies in birdsong</li>
+						<li>Hierarchies in motor control</li>
+						<li>Affect of recent outcomes on decision biases</li>
 					</ul>
 				</section>
 
@@ -178,14 +181,15 @@ Time         | ID | Class  | Value  | Duration | Sample_id
 				<section>
 					<h2>Allow for Normalization of Events</h2>
 					<ul>
-						<li>SQL &emdash; Foreign keys</li>
-						<li>NoSQL &emdash; References or links</li>
-						<li>HDF5 &emdash; hard &amp; soft links, <code>reference</code> datatype</li>
+						<li>SQL &mdash; Foreign keys</li>
+						<li>NoSQL &mdash; References or links</li>
+						<li>HDF5 &mdash; hard &amp; soft links, <code>reference</code> datatype</li>
 					</ul>
 				</section>
 
 				<section>
 					<h2>Thank you</h2>
+					<p><a href="http://justinkiggins.com">Justin Kiggins</a> / Neurosciences Doctoral Candidate at UC San Diego</p>
 				</section>
 
 			</div>
