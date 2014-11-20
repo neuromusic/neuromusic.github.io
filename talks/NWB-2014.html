@@ -43,8 +43,8 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h3>Nothing in neurodata makes sense</h1>
-					<h1>except in light of behavioral annotations</h3>
+					<h3>Nothing in <strong>neurodata</strong> makes sense</h1>
+					<h1>except in light of <strong>behavioral annotations</strong></h3>
 					<p>
 						<small>
 							<a href="http://justinkiggins.com">Justin Kiggins</a> / Neurosciences Doctoral Candidate at UC San Diego
@@ -56,27 +56,7 @@
 				</section>
 
 				<section>
-					<h2><em>Experimental Events</em> data type</h2>
-					<blockquote cite="https://crcns.org/files/data/nwb/ephys_requirements_v0_72.pdf">&ldquo;...consists of times of events, along with values that correspond to the times. This data type can be used to describe: stimuli, trials or sweeps, time intervals, behaviors, and other events or conditions that occur during the experiment.&rdquo;</blockquote>
-					<p><a href="https://crcns.org/files/data/nwb/ephys_requirements_v0_72.pdf">INCF requirements for storing electrophysiology data</a><br /> (PDF, 2014-11-03)</p>
-
-				</section>
-
-				<section>
-					<h2>Event Requirements</h2>
-					<ul>
-						<li><strong>Starting time</strong> of event monitoring</li>
-						<li><strong>Ending time</strong> of event monitoring</li>
-						<li><strong>Description</strong> of the events</li>
-						<li>Sequence of <strong>event times</strong></li>
-						<li><strong>Property values</strong> needed to describe each event.</li>
-					</ul>
-					<p><a href="https://crcns.org/files/data/nwb/ephys_requirements_v0_72.pdf">INCF requirements for storing electrophysiology data</a><br /> (PDF, 2014-11-03)</p>
-
-				</section>
-
-				<section>
-					<h2>However, behavior is not flat.</h2>
+					<h2>Behavior is complex and complicated.</h2>
 					<ul>
 						<li>Stimulus events often have relationships which behavior &amp; neural activity depend on (e.g. Match to Sample tasks)</li>
 						<li>Behavioral events may be inter-related through hierarchical structures (e.g. birdsong)</li>
@@ -85,7 +65,7 @@
 				</section>
 
 				<section>
-					<h2>Example: Operant conditioning</h2>
+					<h2>Operant conditioning as a case study</h2>
 					<h3>Stimulus &#10097; Response &#10097; Consequence</h3>
 					<ul>
 						<li>Which event was the Response? Stimulus? Consequence?</li>
@@ -94,9 +74,38 @@
 				</section>
 
 				<section>
-					<h2>Delayed Match to Sample</h2>
+					<h2>Basic Operant Conditioning</h2>
 					<pre>
-						<code style="font-size: 18px; margin-top: 20px;">
+						<code style="font-size: 14px; margin-top: 20px;">
+Time         | ID | Stimulus | Response | r_Time | Error
+-------------|----|----------|----------|--------|------
+12:13:05.265 | 1  | puppy    | Right    | 2.115  | False
+12:13:14.655 | 2  | kitty    | Right    | 2.004  | True
+12:13:87.098 | 3  | puppy    | Left     | 2.298  | True
+						</code>
+					</pre>
+					<p>This is a typical data format when only doing a simple behavior</p> 
+				</section>
+
+
+				<section>
+					<h2>Match to Sample</h2>
+					<pre>
+						<code style="font-size: 14px; margin-top: 20px;">
+Time         | ID | Sample | Target | Response | r_Time | Error
+-------------|----|------- |--------|----------|--------|------
+12:13:05.265 | 1  | puppy  | puppy  | Right    | 2.115  | False
+12:13:14.655 | 2  | kitty  | puppy  | Right    | 2.004  | True
+12:13:87.098 | 3  | puppy  | kitty  | Left     | 2.298  | False
+						</code>
+					</pre>
+					<p>However, if we are doing neurophysiology, we need to know timing information.</p> 
+				</section>
+
+				<section>
+					<h2>Need timing of Sample &amp; Target</h2>
+					<pre>
+						<code style="font-size: 14px; margin-top: 20px;">
 Time         | ID | Sample | s_Time | s_Dur | Target | t_Time | t_Dur | Response | r_Time | Error
 -------------|----|------- |--------|-------|--------|--------|-------|----------|--------|------
 12:13:05.265 | 1  | puppy  | 0.0    | 0.5   | puppy  | 1.5    | 0.5   | Right    | 2.115  | False
@@ -113,7 +122,7 @@ Time         | ID | Sample | s_Time | s_Dur | Target | t_Time | t_Dur | Response
 				<section>
 					<h2>Solution: Grouping stimulus, response, and consequence events into Trials</h2>
 					<pre>
-						<code style="font-size: 18px; margin-top: 20px;">
+						<code style="font-size: 14px; margin-top: 20px;">
 Events
 ======
 Time         | ID | Class  | Value  | Duration
@@ -179,17 +188,30 @@ Time         | ID | Class  | Value  | Duration | Sample_id
 				</section>
 
 				<section>
-					<h2>Allow for Normalization of Events</h2>
+					<h2>Minimally, Allow for Normalization of Events</h2>
 					<ul>
 						<li>SQL &mdash; Foreign keys</li>
 						<li>NoSQL &mdash; References or links</li>
-						<li>HDF5 &mdash; hard &amp; soft links, <code>reference</code> datatype</li>
+						<li>HDF5 &mdash; <code>reference</code> datatype</li>
 					</ul>
 				</section>
 
 				<section>
+					<h2>This opens up behavioral representations to be a rich as the behaviors themselves</h2>
+					<h3>and lets the lines between behavior and neurophysiology be drawn as the researcher sees fit.</h3>
+				</section>
+
+				<section>
 					<h2>Thank you</h2>
-					<p><a href="http://justinkiggins.com">Justin Kiggins</a> / Neurosciences Doctoral Candidate at UC San Diego</p>
+					<p><a href="http://justinkiggins.com">Justin Kiggins</a><br />
+					Doctoral Candidate in Neurosciences, UC San Diego<br />
+					Gentner Lab<br />
+					<a href="mailto:jkiggins@ucsd.edu">jkiggins@ucsd.edu</a><br />
+					</p>
+					<p>
+						<small><a href="http://neuromusic.github.io/talks/NWB-2014">http://neuromusic.github.io/talks/NWB-2014</small>
+					</p>
+
 				</section>
 
 			</div>
