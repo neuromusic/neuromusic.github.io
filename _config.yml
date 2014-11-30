@@ -1,3 +1,14 @@
-url: http://blog.justinkiggins.com/
-name: 'justin&#039;s longish notes'
-description: by Justin Kiggins
+name: Justin Kiggins
+description: longish notes
+meta_description: Justin Kiggins
+
+markdown: redcarpet
+highlighter: pygments
+logo: false
+paginate: 15
+baseurl: /
+domain_name: 'http://neuromusic.github.io'
+
+# Details for the RSS feed generator
+url:            'blog url'
+author:         'Your Name'
