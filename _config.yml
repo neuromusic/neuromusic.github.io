@@ -1,12 +1,3 @@
-name: Justin Kiggins
-description: computational neuroscience
-meta_description: "Justin Kiggins, computational neuroscience"
-
-markdown: redcarpet
-pygments: true
-logo: false
-paginate: 15
-
-# Details for the RSS feed generator
-url:            'http://neuromusic.github.io'
-author:         'Justin Kiggins'
+url: http://blog.justinkiggins.com/
+name: 'justin&#039;s longish notes'
+description: by Justin Kiggins
