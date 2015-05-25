@@ -7,11 +7,8 @@ dsq_thread_id:
   - 1211671989
 categories:
   - General
-tags:
-  - featured
+image: 2013/04/debate.png
 ---
-<img class="size-medium wp-image-408 alignright" alt="Sebastian Seung and Anthony Movshon engage in a public debate about the connectome" src="http://blog.justinkiggins.com/wp-content/uploads/2013/04/debate-356x197.png" width="356" height="197" />
-
 Dear Larry Swanson,
 
 I&#8217;m writing in response to [your letter][1] to SfN members regarding the Brain Initiative, primarily because I strongly disagree with one of your key points. In the letter, you write:

@@ -12,8 +12,8 @@ tags:
   - beer
   - neuroscience
   - San Diego
+image: 2010/11/alesmith_speedway_stout-393x524.jpg
 ---
-<img class="size-large wp-image-382 alignright" alt="alesmith_speedway_stout" src="http://blog.justinkiggins.com/wp-content/uploads/2010/11/alesmith_speedway_stout-393x524.jpg" width="393" height="524" />  
 I don&#8217;t think that most neuroscientists know how lucky they are to have descended upon this beautiful city on the tail of San Diego Beer Week. The discerning neuroscientist will find some awesome special beer during their first few days at SfN.  
 I&#8217;ve started compiling the San Diego Beer Week events that are close to the hotels near the convention center and the SfN hotels. I&#8217;ll get the rest of the days up soon. Enjoy!
 

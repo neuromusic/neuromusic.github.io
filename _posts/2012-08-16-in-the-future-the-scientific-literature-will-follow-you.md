@@ -12,9 +12,8 @@ tags:
   - following the literature
   - ideas
   - scientific publishing
+image: 2012/08/future.jpg
 ---
-[<img class="wp-image-373 alignright" src="http://blog.justinkiggins.com/wp-content/uploads/2012/08/future-524x349.jpg" alt="&quot;_MG_9934&quot; CC-BY RoyZilla92" width="367" height="244" />][1]
-
 Of the 1+ million new scientific papers published each year, **which ones should a scientist read**?
 
 Its obvious that any single researcher can&#8217;t read them all. Nor do we want to&#8230; the overwhelming majority aren&#8217;t relevant to us or our work. We limit what we read and we employ variety of methods to chose what new research we do read&#8230; a strategic foraging task utilizing a hodge-podge set of tools, including subscribing to journals or RSS feeds, saved Pubmed searches

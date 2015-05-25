@@ -12,9 +12,8 @@ tags:
   - meta-science
   - science
   - Twitter
+image: 2012/10/low_hanging_fruit-by-Caza_No_7.jpg
 ---
-<img class="wp-image-358 alignright" alt="&quot;Low hanging fruit&quot; CC-BY Caza_No_7" src="http://blog.justinkiggins.com/wp-content/uploads/2012/10/low_hanging_fruit-by-Caza_No_7-524x349.jpg" width="419" height="279" />
-
 Here are the [#altmetrics][1] that I want to see for individual research papers:
 
 *   How many journal clubs are discussing this?

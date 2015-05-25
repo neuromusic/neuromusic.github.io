@@ -5,11 +5,8 @@ layout: post
 permalink: /2012/12/14/the-value-of-protesting/
 dsq_thread_id:
   - 975132268
-categories:
-  - General
+image: 2012/12/occupy_oakland.jpg
 ---
-<img class="wp-image-366 alignright" alt="&quot;Occupy Oakland October 11&quot; CC-BY quinn norton" src="http://blog.justinkiggins.com/wp-content/uploads/2012/12/occupy_oakland-524x349.jpg" width="367" height="244" />
-
 A quick thought, [inspired on twitter][1]:
 
 Money is protected as &#8220;free speech&#8221;, hence lobbying is legal. We can give money to other persons to speak for us.

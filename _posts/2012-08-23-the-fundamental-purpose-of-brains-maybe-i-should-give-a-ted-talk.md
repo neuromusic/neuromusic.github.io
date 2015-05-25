@@ -11,9 +11,8 @@ tags:
   - brains
   - neuroscience
   - speculation
+image: 2012/08/ted_talk.jpg
 ---
-<img class="wp-image-364 alignright" alt="&quot;TED Talk&quot; CC-BY Steve Jurvetson" src="http://blog.justinkiggins.com/wp-content/uploads/2012/08/ted_talk-524x409.jpg" width="419" height="327" />
-
 I have this pet theory that nervous systems are fundamentally organs for predicting the future so the organism can respond appropriately. And to do this, nervous systems rely on correlations in the environment and temporal precedence to infer causality. Which is part of why we are so quick to apply causal explanations to spurious correlations.
 
 The major differences in &#8220;complexity&#8221; or &#8220;intelligence&#8221; or &#8220;consciousness&#8221; across animals are largely just differences in the scope and resolution of the inputs and the temporal scales of evidence accumulation and prediction.

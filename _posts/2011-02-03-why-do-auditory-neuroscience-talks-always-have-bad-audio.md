@@ -25,7 +25,7 @@ That said, I think I&#8217;m going to get one of these:
 </div>
 
 <div id="_mcePaste">
-  <a href="http://www.amazon.com/gp/product/B001UEBN42?ie=UTF8&tag=pulsatance-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B001UEBN42"><img class="alignnone size-full wp-image-209" title="x-mini-II" src="http://pulsatance.com/wp-content/uploads/2011/02/x-mini-II.jpg" alt="" width="160" height="160" /></a>
+  <a href="http://www.amazon.com/gp/product/B001UEBN42?ie=UTF8&tag=pulsatance-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B001UEBN42"><img class="alignnone size-full wp-image-209" title="x-mini-II" src="http://pulsatance.com/assets/img/2011/02/x-mini-II.jpg" alt="" width="160" height="160" /></a>
 </div>
 
 <div id="_mcePaste">
@@ -36,7 +36,7 @@ That said, I think I&#8217;m going to get one of these:
 </div>
 
 <div id="_mcePaste">
-  <a href="http://www.amazon.com/gp/product/B002NEG0VO?ie=UTF8&tag=pulsatance-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002NEG0VO"><img class="alignnone size-full wp-image-210" title="altec-lansing" src="http://pulsatance.com/wp-content/uploads/2011/02/altec-lansing.jpg" alt="" width="160" height="157" /></a>
+  <a href="http://www.amazon.com/gp/product/B002NEG0VO?ie=UTF8&tag=pulsatance-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002NEG0VO"><img class="alignnone size-full wp-image-210" title="altec-lansing" src="http://pulsatance.com/assets/img/2011/02/altec-lansing.jpg" alt="" width="160" height="157" /></a>
 </div>
 
 <div id="_mcePaste">
@@ -47,5 +47,5 @@ That said, I think I&#8217;m going to get one of these:
 </div>
 
 <div id="_mcePaste">
-  <a href="http://www.amazon.com/gp/product/B003VAK1I2?ie=UTF8&tag=pulsatance-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B003VAK1I2"><img class="alignnone size-full wp-image-211" title="logitech" src="http://pulsatance.com/wp-content/uploads/2011/02/logitech.jpg" alt="" width="160" height="113" /></a>
+  <a href="http://www.amazon.com/gp/product/B003VAK1I2?ie=UTF8&tag=pulsatance-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B003VAK1I2"><img class="alignnone size-full wp-image-211" title="logitech" src="http://pulsatance.com/assets/img/2011/02/logitech.jpg" alt="" width="160" height="113" /></a>
 </div>

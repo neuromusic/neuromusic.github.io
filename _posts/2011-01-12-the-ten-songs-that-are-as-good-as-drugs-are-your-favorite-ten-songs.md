@@ -14,9 +14,8 @@ tags:
   - neuroscience
   - research blogging
   - science
+image: 2011/01/burning_man_dancer.jpg
 ---
-<img class="size-medium wp-image-397 alignright" alt="burning_man_dancer" src="http://blog.justinkiggins.com/wp-content/uploads/2011/01/burning_man_dancer-356x267.jpg" width="356" height="267" />
-
 A good friend sent me a link to this article about the recent paper out of the Zatorre lab, &#8220;[Anatomically distint dopamine release during anticipation and experience of of peak emotion to music][1].&#8221;
 
 The [article][2] is titled &#8220;Ten Songs that Will Get You High, According to Science,&#8221; and it goes on to list these ten songs.

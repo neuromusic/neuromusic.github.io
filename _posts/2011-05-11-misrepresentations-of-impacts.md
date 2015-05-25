@@ -12,8 +12,8 @@ tags:
   - meta-science
   - science
   - society
+image: 2011/05/splash-356x237.jpg
 ---
-<img class="size-medium wp-image-395 alignright" alt="splash" src="http://blog.justinkiggins.com/wp-content/uploads/2011/05/splash-356x237.jpg" width="356" height="237" />
 
 *This is a draft post from a few months ago that I forgot about, so the links a slightly dated, but the topics are still relevant.*
 
