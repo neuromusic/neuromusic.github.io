@@ -3,17 +3,16 @@ title: 'Don&#8217;t Panic! Elsevier&#8217;s #OpenAccess policy is not malicious'
 author: Justin Kiggins
 layout: post
 permalink: /2014/08/18/elseviers-openaccess-policy-malice-or-value-add/
+disqus: True
 dsq_thread_id:
   - 2937842705
 categories:
   - General
-tags:
-  - featured
+image: 2014/08/14625644706_dc9d8bd94c_o.jpg
 ---
-<figure id="attachment_437" style="width: 356px;" class="wp-caption alignright"><img class="size-medium wp-image-437" src="http://blog.justinkiggins.com/wp-content/uploads/2014/08/14625644706_dc9d8bd94c_o-356x235.jpg" alt="photo by Dustin Gaffke" width="356" height="235" /><figcaption class="wp-caption-text">photo by [Dustin Gaffke][1]</figcaption></figure> 
 Yesterday, I noticed a comment on Twitter where Erin McKiernan expressed confusion over Elsevier&#8217;s Open Access policy:
 
-<blockquote class="twitter-tweet" lang="en">
+<blockquote class="twitter-tweet tw-align-center" lang="en">
   <p>
     Q: Have you seen an exclusive license requirement on open access publishing agreements? Surely not BOAI compliant. <a href="https://twitter.com/MikeTaylor">@MikeTaylor</a>?
   </p>
@@ -27,7 +26,7 @@ Yesterday, I noticed a comment on Twitter where Erin McKiernan expressed confusi
 
 This was promptly jumped on by other Open Access advocates, who were insisting that it is &#8220;not OA&#8221;, &#8220;nasty&#8221;, and even &#8220;malice&#8221;:
 
-<blockquote class="twitter-tweet" lang="en">
+<blockquote class="twitter-tweet tw-align-center" lang="en">
   <p>
     <a href="https://twitter.com/MikeTaylor">@MikeTaylor</a> <a href="https://twitter.com/emckiernan13">@emckiernan13</a> By definition that is not OA.
   </p>
@@ -37,7 +36,7 @@ This was promptly jumped on by other Open Access advocates, who were insisting t
   </p>
 </blockquote>
 
-<blockquote class="twitter-tweet" lang="en">
+<blockquote class="twitter-tweet tw-align-center" lang="en">
   <p>
     <a href="https://twitter.com/krisshaffer">@krisshaffer</a> <a href="https://twitter.com/CharlesOppenh">@CharlesOppenh</a> <a href="https://twitter.com/MikeTaylor">@MikeTaylor</a> Yup. Nasty, isn&#8217;t it? And they aren&#8217;t the only ones doing it. Really should be actionable, I think.
   </p>
@@ -47,7 +46,7 @@ This was promptly jumped on by other Open Access advocates, who were insisting t
   </p>
 </blockquote>
 
-<blockquote class="twitter-tweet" lang="en">
+<blockquote class="twitter-tweet tw-align-center" lang="en">
   <p>
     .<a href="https://twitter.com/emckiernan13">@emckiernan13</a> <a href="https://twitter.com/CharlesOppenh">@CharlesOppenh</a> WHAT THE ACTUAL F*&£ They&#8217;ve now crossed the line where this can&#8217;t be written off as ignorance. It&#8217;s malice.
   </p>
@@ -63,9 +62,13 @@ I burned through a few dozen tweet yesterday trying to convince Erin, Mike, & Ch
 
 The problem here is that the exclusive license is something that you (the author and copyright holder) grant to the publisher. It is a guarantee to them that you will not take your original content elsewhere. Alone, this would indeed be sketchy, but since both journals turn around and release the article under a CC license, anyone (including the author) can reuse and redistribute the article subject to the terms of the CC license*.
 
-[Elsevier&#8217;s author agreement][5] actually illustrates this really well:<figure id="attachment_439" style="width: 356px;" class="wp-caption aligncenter">
+[Elsevier&#8217;s author agreement][5] actually illustrates this really well:
 
-<img class="wp-image-439 size-medium" src="http://blog.justinkiggins.com/wp-content/uploads/2014/08/Author-agreement-356x172.jpg" alt="Author-agreement" width="356" height="172" /><figcaption class="wp-caption-text">used without permission</figcaption></figure> 
+<figure>
+  <img src="/assets/img/2014/08/Author-agreement.jpg" alt="Author-agreement"/>
+  <figcaption class="wp-caption-text">used without permission</figcaption>
+</figure> 
+
 You grant the publisher exclusive publishing rights then they release the paper under the OA-compliant CC license. There is no adverse impact on the Open Access goals. It is entirely consistent with the Budapest Open Access Initiative. The limitation that it **does** place is preventing a line directly from the Author to the User. This can actually be useful, as I&#8217;ll explain soon.
 
 Above, I used a photo by the very kind-hearted Dustin Gaffke, who shared his photo of Panic! At The Disco on Flickr with a CC-BY license. Thus, I was able to download the photo and upload it here with the proper attribution (noting the copyright holder and providing a link back to the source). This is how the CC-BY license works. I can do all kinds of things with his photo&#8230; I can make money off of it, printing it on T-shirts and sell them in the alley outside of Panic! At The Disco concerts, as long as I print &#8220;photo by Dustin Gaffke&#8221;. I could modify the photo, add my own color effects, mash it up with other photos to make my own Creative Work. Just gotta note the original creator and how it was modified. This is how the CC-BY license works.
@@ -98,7 +101,7 @@ Is it &#8220;malice&#8221;? Absolutely not.
 
 * * *
 
-* If you are an IP lawyer, feel free to correct me on any of this.
+*n.b.* If you are an IP lawyer, feel free to correct me on any of this.
 
 &nbsp;
 

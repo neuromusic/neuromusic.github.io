@@ -30,16 +30,14 @@ PDFs have less clutter**
 They certainly don&#8217;t *have* to, but since publishers apply the standards of print design to the design of their publications, there is more efficiency in the PDF format.
 
 For example, here are the HTML and PDF versions of the topmost portion of a recent Nature paper&#8230; this is essentially what I see in my browser.  
-<img class="alignnone size-large wp-image-265" title="html" alt="" src="http://blog.justinkiggins.com/wp-content/uploads/2012/08/html-524x460.png" width="524" height="460" />  
+<img src="/assets/img/2012/08/html.png" />  
 Circled in blue are the things that I am looking for&#8230; This is the actual content of the article in question. In red is all the stuff I don&#8217;t care about.
 
 That a lot of red, mostly for either advertisements or other services by the publisher.
 
 Now for the PDF of the same paper&#8230;
 
-<div>
-  <img class="alignnone size-large wp-image-266" title="pdf" alt="" src="http://blog.justinkiggins.com/wp-content/uploads/2012/08/pdf-524x460.png" width="524" height="460" />
-</div>
+<img src="/assets/img/2012/08/pdf.png"/>
 
 The only thing in red here is the DOI. This is actually important, but I don&#8217;t usually need to read it and I felt bad failing to put any red on the PDF. And the figure shows up on the first page, which means that a quick glance gives me some information about the topic of the paper.
 

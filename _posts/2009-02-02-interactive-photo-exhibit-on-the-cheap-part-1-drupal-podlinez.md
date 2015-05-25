@@ -13,11 +13,8 @@ tags:
   - Podcast
   - Podlinez
   - portfolio
+image: 2008/10/fuse06.jpg
 ---
-<figure id="attachment_67" style="width: 235px;" class="wp-caption alignright"><a href="http://pulsatance.com/wp-content/uploads/2008/10/fuse06.jpg" rel="lightbox[44]" title="FUSE is a portrait exhibit of the complex worlds of resettled refugees in the Phoenix metro area."><img class="size-medium wp-image-67" title="FUSE is a portrait exhibit of the complex worlds of resettled refugees in the Phoenix metro area." alt="Victoria Yoa, refugee from Liberia" src="http://pulsatance.com/wp-content/uploads/2008/10/fuse06-235x300.jpg" width="235" height="300" /></a><figcaption class="wp-caption-text">FUSE is a portrait exhibit of the complex worlds of resettled refugees in the Phoenix metro area.</figcaption></figure> 
-&nbsp;<figure id="attachment_67" style="width: 542px;" class="wp-caption alignnone">
-
-<img class="size-full wp-image-67" alt="Victoria Yoa, refugee from Liberia" src="http://blog.justinkiggins.com/wp-content/uploads/2008/10/fuse06.jpg" width="542" height="690" /><figcaption class="wp-caption-text">Victoria Yoa, refugee from Liberia</figcaption></figure> 
 In April 2008, [COAR][1] launched a photo exhibit with artist [Eliza Gregory][2]. Titled &#8220;[FUSE: Portraits of Refugee Households in Metropolitan Phoenix][3],&#8221; the exhibit sought to raise awareness in the community regarding Phoenicians&#8217; newest neighbors. From the summary of the exhibit:
 
 > FUSE is a portrait exhibit of the complex worlds of resettled refugees in the Phoenix metro area. It fosters critical thinking on who refugees are and how, through sharing experiences, the Phoenix metro community can seek common ground. The photographs validate the struggles and triumphs of these families, portraying them in a way that cultivates a deeper sense of belonging in the community.

@@ -1,14 +1,28 @@
-name: Justin Kiggins
-description: longish notes
-meta_description: Justin Kiggins
+title: Justin Kiggins
+description: neuroscience via engineering via music
+
+url: http://127.0.0.1:4000
+baseurl: ""
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
 
 markdown: redcarpet
 highlighter: pygments
-logo: false
-paginate: 15
-baseurl: /
-domain_name: 'http://neuromusic.github.io'
+paginate: 5
 
-# Details for the RSS feed generator
-url:            'blog url'
-author:         'Your Name'
+navigation:
+ - title: Home
+   url: /index.html
+ - title: Contact
+   url: /contact
+
+social:
+   github: neuromusic
+   twitter: neuromusic
+   email: justin.kiggins@gmail.com
+
+google_analytics: "UA-344915-7"
+
+
+# RSS
+name: Justin Kiggins

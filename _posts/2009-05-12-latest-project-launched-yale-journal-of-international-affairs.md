@@ -12,8 +12,9 @@ tags:
   - Drupal
   - portfolio
   - website
+image: 2009/05/yjia-home-screenshot.png
 ---
-<a href="http://pulsatance.com/wp-content/uploads/2009/05/yjia-home-screenshot.png" rel="lightbox[148]" title="yjia-home-screenshot"><img class="size-medium wp-image-149 alignright" title="yjia-home-screenshot" alt="yjia-home-screenshot" src="http://pulsatance.com/wp-content/uploads/2009/05/yjia-home-screenshot-300x232.png" width="300" height="232" /></a>Earlier this week, I launched my latest project: a new website for the [Yale Journal of International Affairs][1].
+Earlier this week, I launched my latest project: a new website for the [Yale Journal of International Affairs][1].
 
 I&#8217;m really excited about how it turned out. The journal, which is run entirely by grad students at Yale, had accidentally lost their old website last year due to some payment mistakes (oops!). So, we built a new one.
 

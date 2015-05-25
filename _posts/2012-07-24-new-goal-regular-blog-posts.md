@@ -9,8 +9,8 @@ categories:
   - General
 tags:
   - announcement
+image: 2012/07/reset-524x348.jpg
 ---
-<img class="wp-image-380 alignright" alt="reset" src="http://blog.justinkiggins.com/wp-content/uploads/2012/07/reset-524x348.jpg" width="419" height="278" />
 
 They might be short. They might be long. But the goal is to just start writing again, because 140 characters is no longer enough.
 
