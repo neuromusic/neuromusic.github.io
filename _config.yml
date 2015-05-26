@@ -1,7 +1,7 @@
 title: Justin Kiggins
 description: neuroscience via engineering via music
 
-url: http://127.0.0.1:4000
+url: http://neuromusic.github.io
 baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
