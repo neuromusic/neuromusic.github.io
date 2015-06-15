@@ -2,10 +2,10 @@
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         var disqus_shortname = 'pulsatance'; 
+        var disqus_identifier = '{{ page.dsq_thread_id }}'; 
         var disqus_developer = 0; // developer mode is on
         (function() {
             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            var disqus_identifier = '{{ page.dsq_thread_id }}'; 
             dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
