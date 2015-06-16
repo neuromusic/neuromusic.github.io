@@ -3,6 +3,7 @@ title: 'Latest project launched: Yale Journal of International Affairs'
 author: Justin Kiggins
 layout: post
 permalink: /2009/05/12/latest-project-launched-yale-journal-of-international-affairs/
+disqus: True
 dsq_thread_id:
   - 680509115
 categories:

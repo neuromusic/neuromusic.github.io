@@ -3,6 +3,7 @@ title: 'the fundamental &#8220;purpose&#8221; of brains&#8230; maybe I should gi
 author: Justin Kiggins
 layout: post
 permalink: /2012/08/23/the-fundamental-purpose-of-brains-maybe-i-should-give-a-ted-talk/
+disqus: True
 dsq_thread_id:
   - 816049496
 categories:

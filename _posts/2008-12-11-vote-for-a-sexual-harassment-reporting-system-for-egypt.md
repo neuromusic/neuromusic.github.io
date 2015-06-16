@@ -3,6 +3,7 @@ title: Vote for a sexual harassment reporting system for Egypt
 author: Justin Kiggins
 layout: post
 permalink: /2008/12/11/vote-for-a-sexual-harassment-reporting-system-for-egypt/
+disqus: True
 dsq_thread_id:
   - 755626289
 categories:

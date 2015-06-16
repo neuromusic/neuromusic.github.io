@@ -3,6 +3,7 @@ title: Stereotyped Makeover! Graduate Student Edition
 author: Justin Kiggins
 layout: post
 permalink: /2011/02/08/stereotyped-makeover-graduate-student-edition/
+disqus: True
 dsq_thread_id:
   - 680979415
 categories:

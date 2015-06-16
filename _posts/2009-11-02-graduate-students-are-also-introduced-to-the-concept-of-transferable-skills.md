@@ -3,6 +3,7 @@ title: 'Graduate students are also introduced to the concept of &#8220;transfera
 author: Justin Kiggins
 layout: post
 permalink: /2009/11/02/graduate-students-are-also-introduced-to-the-concept-of-transferable-skills/
+disqus: True
 dsq_thread_id:
   - 680509112
 categories:

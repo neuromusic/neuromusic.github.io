@@ -3,6 +3,7 @@ title: Blogging for and by refugees in Egypt
 author: Justin Kiggins
 layout: post
 permalink: /2009/01/15/blogging-for-and-by-refugees-in-egypt/
+disqus: True
 dsq_thread_id:
   - 821258265
 categories:

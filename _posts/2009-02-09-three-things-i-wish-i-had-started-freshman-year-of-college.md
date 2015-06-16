@@ -3,6 +3,7 @@ title: Three things I wish I had started freshman year of college
 author: Justin Kiggins
 layout: post
 permalink: /2009/02/09/three-things-i-wish-i-had-started-freshman-year-of-college/
+disqus: True
 dsq_thread_id:
   - 680509130
 categories:

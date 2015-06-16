@@ -3,6 +3,7 @@ title: Hello World
 author: Justin Kiggins
 layout: post
 permalink: /2008/10/14/hello-world/
+disqus: True
 dsq_thread_id:
   - 680509133
 categories:

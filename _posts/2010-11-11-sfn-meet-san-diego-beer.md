@@ -3,6 +3,7 @@ title: SfN, meet San Diego beer.
 author: Justin Kiggins
 layout: post
 permalink: /2010/11/11/sfn-meet-san-diego-beer/
+disqus: True
 dsq_thread_id:
   - 680509143
 categories:

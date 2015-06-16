@@ -3,6 +3,7 @@ title: in the future, the scientific literature will follow you
 author: Justin Kiggins
 layout: post
 permalink: /2012/08/16/in-the-future-the-scientific-literature-will-follow-you/
+disqus: True
 dsq_thread_id:
   - 812088237
 categories:

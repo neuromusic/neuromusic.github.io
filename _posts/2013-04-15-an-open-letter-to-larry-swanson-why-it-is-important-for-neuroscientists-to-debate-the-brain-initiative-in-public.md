@@ -3,6 +3,7 @@ title: 'An open letter to Larry Swanson: Why it is important for neuroscientists
 author: Justin Kiggins
 layout: post
 permalink: /2013/04/15/an-open-letter-to-larry-swanson-why-it-is-important-for-neuroscientists-to-debate-the-brain-initiative-in-public/
+disqus: True
 dsq_thread_id:
   - 1211671989
 categories:

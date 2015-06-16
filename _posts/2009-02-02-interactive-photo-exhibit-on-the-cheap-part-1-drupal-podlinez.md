@@ -3,6 +3,7 @@ title: 'Interactive photo exhibit on the cheap, part 1: Drupal &#038; Podlinez'
 author: Justin Kiggins
 layout: post
 permalink: /2009/02/02/interactive-photo-exhibit-on-the-cheap-part-1-drupal-podlinez/
+disqus: True
 dsq_thread_id:
   - 680509125
 categories:

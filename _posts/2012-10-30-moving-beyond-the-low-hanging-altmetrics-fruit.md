@@ -3,6 +3,7 @@ title: 'moving beyond the low-hanging #altmetrics fruit'
 author: Justin Kiggins
 layout: post
 permalink: /2012/10/30/moving-beyond-the-low-hanging-altmetrics-fruit/
+disqus: True
 dsq_thread_id:
   - 907574478
 categories:

@@ -3,6 +3,7 @@ title: Why do scientists tend to prefer PDF documents over HTML when reading sci
 author: Justin Kiggins
 layout: post
 permalink: /2012/08/16/why-do-scientists-tend-to-prefer-pdf-documents-over-html-when-reading-scientific-journals/
+disqus: True
 dsq_thread_id:
   - 808177288
 categories:

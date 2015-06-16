@@ -3,6 +3,7 @@ title: 'new goal: regular blog posts'
 author: Justin Kiggins
 layout: post
 permalink: /2012/07/24/new-goal-regular-blog-posts/
+disqus: True
 dsq_thread_id:
   - 786178897
 categories:

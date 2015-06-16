@@ -3,6 +3,7 @@ title: Rotation decisions for my first year of graduate school
 author: Justin Kiggins
 layout: post
 permalink: /2009/07/01/rotation-decisions-for-my-first-year-of-graduate-school/
+disqus: True
 dsq_thread_id:
   - 680509138
 categories:

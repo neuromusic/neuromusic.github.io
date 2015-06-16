@@ -3,6 +3,7 @@ title: 'the &#8220;value&#8221; of protesting'
 author: Justin Kiggins
 layout: post
 permalink: /2012/12/14/the-value-of-protesting/
+disqus: True
 dsq_thread_id:
   - 975132268
 image: 2012/12/occupy_oakland.jpg

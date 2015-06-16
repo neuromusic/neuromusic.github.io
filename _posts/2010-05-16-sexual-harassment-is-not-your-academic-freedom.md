@@ -3,6 +3,7 @@ title: Sexual harassment is not your academic freedom
 author: Justin Kiggins
 layout: post
 permalink: /2010/05/16/sexual-harassment-is-not-your-academic-freedom/
+disqus: True
 dsq_thread_id:
   - 680460070
 categories:

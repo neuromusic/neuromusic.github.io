@@ -3,6 +3,7 @@ title: why do auditory neuroscience talks always have bad audio?
 author: Justin Kiggins
 layout: post
 permalink: /2011/02/03/why-do-auditory-neuroscience-talks-always-have-bad-audio/
+disqus: True
 dsq_thread_id:
   - 692346593
 categories:

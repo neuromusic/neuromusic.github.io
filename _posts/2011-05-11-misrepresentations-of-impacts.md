@@ -3,6 +3,7 @@ title: (mis)representations of impacts
 author: Justin Kiggins
 layout: post
 permalink: /2011/05/11/misrepresentations-of-impacts/
+disqus: True
 dsq_thread_id:
   - 680459594
 categories:

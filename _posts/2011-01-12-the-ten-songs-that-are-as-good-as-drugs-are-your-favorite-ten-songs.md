@@ -3,6 +3,7 @@ title: 'The ten songs that are as good as drugs are&#8230; your favorite ten son
 author: Justin Kiggins
 layout: post
 permalink: /2011/01/12/the-ten-songs-that-are-as-good-as-drugs-are-your-favorite-ten-songs/
+disqus: True
 dsq_thread_id:
   - 728582593
 categories:
