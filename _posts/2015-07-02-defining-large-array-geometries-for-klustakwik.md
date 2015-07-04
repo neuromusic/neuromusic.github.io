@@ -4,6 +4,7 @@ title: "Defining Large Array Geometries for Klustakwik"
 tags:
     - jupyter
     - notebook
+disqus: True
 ---
 We've started using KlustaKwik for spike sorting in the lab and I've been working on getting a data pipeline going. It's masked EM algorithm is very clever, taking into account the adjacency matrix of an electrode array to determine whether it should use one, two, or n recording sites when clustering.
 
