@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "defining large array geometries for klustakwik"
+title: "Defining Large Array Geometries for Klustakwik"
 tags:
     - jupyter
     - notebook
