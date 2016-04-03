@@ -31,7 +31,7 @@
     {% if page.url %}
     <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
     {% endif %}
-    {% if page.content %}
+    {% if page.layout == 'post' %}
     <meta name="twitter:description" content="{% page.content | strip_html | xml_escape | truncate: 200 %}">
     {% else %}
     <meta name="twitter:description" content="{{ site.description }}">
