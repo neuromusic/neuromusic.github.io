@@ -19,5 +19,35 @@
     <!-- Modernizr -->
     <script src="{{ "/assets/js/modernizr.custom.15390.js" | prepend: site.baseurl }}" type="text/javascript"></script>
 
-    {% if site.google_analytics %} {% include google_analytics.html %} {% endif %}
+    <!-- Twitter summary card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@neuromusic">
+    <meta name="twitter:creator" content="@neuromusic">
+
+    {% if page.title %}
+    <meta name="twitter:title" content="{{ page.title }}">
+    {% else %}
+    <meta name="twitter:title" content="{{ site.title }}">
+    {% endif %}    
+
+    {% if page.url %}
+    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+    {% endif %}
+
+    {% if page.content %}
+    <meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | truncate: 200 }}">
+    {% else %}
+    <meta name="twitter:description" content="{{ site.description }}">
+    {% endif %}
+
+    {% if page.image %}
+    <meta name="twitter:image:src" content="{{ site.url }}/assets/img/{{ page.image }}">
+    {% else %}
+    <meta name="twitter:image:src" content="{{ site.url }}/assets/img/agave.jpg">
+    {% endif %}
+
+    <!-- Google Analytics -->
+    {% if site.google_analytics %} 
+    {% include google_analytics.html %} 
+    {% endif %}
 </head>
