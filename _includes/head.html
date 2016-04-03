@@ -20,7 +20,12 @@
     <script src="{{ "/assets/js/modernizr.custom.15390.js" | prepend: site.baseurl }}" type="text/javascript"></script>
 
     <!-- Twitter summary card -->
+    {% if page.image %}
+    <meta name="twitter:card" content="summary_large_image">
+    {% else %}
     <meta name="twitter:card" content="summary">
+    {% endif %}    
+    
     <meta name="twitter:site" content="@{{site.social.twitter}}">
     <meta name="twitter:creator" content="@{{site.social.twitter}}">
     {% if page.title %}
