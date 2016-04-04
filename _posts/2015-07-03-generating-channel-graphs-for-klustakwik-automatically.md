@@ -5,6 +5,7 @@ tags:
     - jupyter
     - notebook
 disqus: True
+image: klustakwik.jpg
 ---
 In order to build the masks for KlustaKwik, SpikeDetekt2 needs to know the graph of adjacencies between all of the recording sites on a recording array. However, a bad channel for a recording session can drastically change the requirements for a probe geometry.
 

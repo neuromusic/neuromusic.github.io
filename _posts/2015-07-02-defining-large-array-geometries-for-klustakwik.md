@@ -5,12 +5,13 @@ tags:
     - jupyter
     - notebook
 disqus: True
+image: 15.02.scholvin.jpg
 ---
 We've started using KlustaKwik for spike sorting in the lab and I've been working on getting a data pipeline going. It's masked EM algorithm is very clever, taking into account the adjacency matrix of an electrode array to determine whether it should use one, two, or n recording sites when clustering.
 
 However, very large arrays make it unrealistic to manually define the probe architectures that SpikeDetekt2 expects. For example, the [dense silicon arrays designed by Ed Boyden's group](http://syntheticneurobiology.org/publications/publicationdetail/234/25):
 
-![Close-Packed Silicon Microelectrodes for Scalable Spatially Oversampled Neural Recording](http://syntheticneurobiology.org/uploads/15.02.scholvin.jpg "Close-Packed Silicon Microelectrodes for Scalable Spatially Oversampled Neural Recording")
+![Close-Packed Silicon Microelectrodes for Scalable Spatially Oversampled Neural Recording](/assets/img/15.02.scholvin.jpg "Close-Packed Silicon Microelectrodes for Scalable Spatially Oversampled Neural Recording")
 
 *5 shanks with 200 sites each and just 11 microns pitch between sites*
 
