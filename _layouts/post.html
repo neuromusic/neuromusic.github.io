@@ -11,9 +11,14 @@ layout: default
   <p class="meta">{{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:180 }}</span> Minute Read</p>
   
   {{ content }}
+  <!-- Disqus comments -->
+  {% if page.disqus %}
+      {% include disqus.html %}
+  {% endif %}
 
   <!-- POST NAVIGATION -->
-  <div class="postNav clearfix">
+  <div class="postNav clearfix"> 
+    
     {% if page.previous.url %} 
       <a class="prev{% if page.previous.image %} image{% endif %}" href="{{ page.previous.url | prepend: site.baseurl }}"><span>&laquo;&nbsp;{{ page.previous.title }}</span>
       {% if page.previous.image %} 
@@ -27,10 +32,6 @@ layout: default
         <img src="{{ '/assets/img/' | prepend: site.baseurl | append: page.next.image }}" alt="">
       {% endif %} 
       </a>
-    {% endif %} 
-    <!-- Disqus comments -->
-    {% if page.disqus %}
-        {% include disqus.html %}
     {% endif %}
   </div>
 </div>
