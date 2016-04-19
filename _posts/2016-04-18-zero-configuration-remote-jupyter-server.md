@@ -10,7 +10,7 @@ image: Portrait_of_Jupiter_from_Cassini.jpg
 
 A while ago I set up [Jupyter/IPython notebook servers for each user](https://github.com/neuromusic/ipynb-deploy) on our lab server. It hides them behind an nginx server, giving everyone a URL to access their notebooks. It works, but there's a bit of overhead involved (supervisord, nginx, etc).
 
-However, the new postdoc in the lab showed me a way easier way to run a notebook remotely w/ no overhead. No nginx, no firewall connection, and as secure as ssh. And now I'm going to show you.
+However, the [new postdoc](https://github.com/zekearneodo) in the lab showed me a way easier way to run a notebook remotely w/ no overhead. No nginx, no firewall connection, and as secure as ssh. And now I'm going to show you.
 
 Login to your server via ssh, then fire up a jupyter notebook w/ &quot;no-browser&quot; and give it a port:
 
