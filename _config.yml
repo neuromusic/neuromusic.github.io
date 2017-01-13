@@ -1,5 +1,5 @@
 title: Justin Kiggins
-description: Full Stack Neuroscience
+description: Data Scientist. Neuroscientist.
 
 url: http://www.justinkiggins.com
 baseurl: ""
@@ -27,6 +27,7 @@ social:
 google_analytics: "UA-344915-7"
 feedburner: http://feeds.feedburner.com/justinkiggins-blog
 
+gems: [jekyll-paginate]
 
 # RSS
 name: Justin Kiggins
